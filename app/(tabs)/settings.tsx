@@ -1,9 +1,8 @@
 import SafeAreaViewLayout from '@/components/SafeAreaViewLayout';
-import '@/global.css';
-
+import React from 'react';
 import { Text } from 'react-native';
 
-export default function App() {
+const Settings = () => {
   return (
     <SafeAreaViewLayout>
       <Text className='text-xl font-bold text-blue-500'>
@@ -11,4 +10,6 @@ export default function App() {
       </Text>
     </SafeAreaViewLayout>
   );
-}
+};
+
+export default Settings;
