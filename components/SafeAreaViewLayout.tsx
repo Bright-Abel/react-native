@@ -14,7 +14,12 @@ const SafeAreaViewLayout = ({
 }) => {
   return (
     <SafeAreaView className={clsx('flex-1 bg-background p-5', className)}>
+      {/* <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentInsetAdjustmentBehavior='automatic'
+      > */}
       {children}
+      {/* </ScrollView> */}
     </SafeAreaView>
   );
 };
