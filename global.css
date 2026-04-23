@@ -16,6 +16,12 @@
   --color-success: #16a34a;
   --color-destructive: #dc2626;
   --color-subscription: #8fd1bd;
+  --color-border-2: #c6bfa2;
+
+  --color-gray-100: #435875;
+  --color-gray-200: #fff7e5;
+
+  --color-brown-100: #e1dbca;
 
   --spacing-0: 0px;
   --spacing-1: 4px;
@@ -79,7 +85,7 @@
   }
 
   .home-add-icon {
-    @apply size-12.5 rounded-full border border-[#C6BFA2] items-center justify-center;
+    @apply size-12.5 rounded-full border border-border-2 items-center justify-center;
   }
 
   .home-balance-card {
