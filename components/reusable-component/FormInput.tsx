@@ -35,13 +35,13 @@ export function FormInput<T extends FieldValues>({
 
             <View
               className={clsx(
-                'flex-row items-center border border-border-2 h-14 px-3.5 rounded-[14px]',
+                'justify-center border border-border-2 h-14 px-3.5 rounded-[14px]',
                 error && 'border-destructive'
               )}
             >
               <TextInput
                 className={clsx(
-                  'flex-1 font-sans-semibold text-gray-100 text-base',
+                  'flex-1 font-sans-semibold h-full w-full text-gray-100 text-base',
                   error && 'text-destructive!'
                 )}
                 value={value || ''}

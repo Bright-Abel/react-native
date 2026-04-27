@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
+  Pressable,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -76,10 +77,12 @@ const SigninForm = ({
                 <Text className='text-gray-100 text-base font-sans-medium'>
                   New to Recurly?{' '}
                 </Text>
-                <Link href='/(auth)/sign-up'>
-                  <Text className='text-accent text-base font-sans-semibold'>
-                    Create an account
-                  </Text>
+                <Link href='/(auth)/sign-up' asChild>
+                  <Pressable>
+                    <Text className='text-accent text-base font-sans-semibold'>
+                      Create an account
+                    </Text>
+                  </Pressable>
                 </Link>
               </View>
             </View>

@@ -20,8 +20,11 @@
 
   --color-gray-100: #435875;
   --color-gray-200: #fff7e5;
+  --color-gray-300: #081226;
 
   --color-brown-100: #e1dbca;
+  --color-brown-200: #ffeae2;
+  --color-brown-300: #f6ecc9;
 
   --spacing-0: 0px;
   --spacing-1: 4px;
@@ -149,7 +152,7 @@
   }
 
   .sub-card {
-    @apply rounded-2xl border border-border p-4;
+    @apply rounded-tr-[20px] rounded-bl-[20px] border border-border p-4;
   }
 
   .sub-card-expanded {

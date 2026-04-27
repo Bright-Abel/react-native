@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
+  Pressable,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -31,10 +32,10 @@ const SignupForm = ({
           <View className='gap-7.5'>
             <View className='items-center gap-2'>
               <Text className='font-sans-bold text-2xl text-primary'>
-                Welcome Back
+                Create your account
               </Text>
               <Text className='text-base text-gray-100 font-sans-medium'>
-                Sign in to manage your subscriptions
+                Start tracking your subscriptions and never miss a payment
               </Text>
             </View>
 
@@ -83,10 +84,12 @@ const SignupForm = ({
                 <Text className='text-gray-100 text-base font-sans-medium'>
                   Already have an account?{' '}
                 </Text>
-                <Link href='/(auth)/sign-in'>
-                  <Text className='text-accent text-base font-sans-semibold'>
-                    Log in
-                  </Text>
+                <Link href='/(auth)/sign-in' asChild>
+                  <Pressable>
+                    <Text className='text-accent text-base font-sans-semibold'>
+                      Log in
+                    </Text>
+                  </Pressable>
                 </Link>
               </View>
             </View>
