@@ -7,6 +7,10 @@ declare global {
     icon: ImageSourcePropType;
   }
 
+  interface AuthLayoutProps {
+    children: React.ReactNode;
+  }
+
   interface TabIconProps {
     focused: boolean;
     icon: ImageSourcePropType;
@@ -51,5 +55,3 @@ declare global {
     title: string;
   }
 }
-
-export {};

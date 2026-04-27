@@ -1,12 +1,6 @@
+import SigninLogic from '@/components/auth-forms/sign-in/SigninLogic';
 import React from 'react';
-import { Text, View } from 'react-native';
 
-const SignIn = () => {
-  return (
-    <View>
-      <Text>SignIn</Text>
-    </View>
-  );
-};
-
-export default SignIn;
+export default function SignInScreen() {
+  return <SigninLogic />;
+}

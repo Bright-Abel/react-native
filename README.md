@@ -48,4 +48,72 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
 # react-native
+
+I'll provide you with three different messages..
+
+1. The first one is going to be the first part of the expo documentation
+2. The second one is going to be the seconsd part of the expo documentation
+3. The third one is going to be going to be my prompt that you should take into account when implementing all of these features.
+   After every single message, ask me to provide the next one
+
+Study whole codebase and attached Clerk documentation to implement a complete custom Clerk auth flow for this Expo app with production-grade sign up and sign in screen with logic, validation, and navigation.
+
+The UI must strictly match the existing app design system and NativeWind patterns and no generic “Clerk” wording.
+
+Use the attached design only as layout inspiration, but keep the auth polished, brand-native, and focused on conversion, clarity, and trust.
+
+<!--  -->
+
+implement a searchable subscription list using the existing SubscriptionCard component and the dummy data from constants.
+
+<!-- Study the entire codebase, paying close attention to the existing design system in global.css (especially the modal-, picker-, category-, and auth- component classes), the existing components in src/components/, the constants in src/constants/data.ts and src/constants/icons.ts, and the home screen at src/app/(tabs)/index.tsx.
+
+Create a src/components/CreateSubscriptionModal.tsx component that:
+
+Is a React Native <Modal> that slides up from the bottom with a transparent overlay
+
+Has a header with "New Subscription" title and a close button
+
+Has four form fields:
+
+Name: TextInput (use auth-input class)
+
+Price: TextInput with keyboardType="decimal-pad" (use auth-input class)
+
+Frequency: Two toggle buttons for Monthly/Yearly (use picker-option / picker-option-active classes)
+
+Category: Chip selection from these options: Entertainment, AI Tools, Developer Tools, Design, Productivity, Cloud, Music, Other (use category-chip / category-chip-active classes)
+
+Has a submit button (use auth-button / auth-button-disabled classes) that validates name is not empty and price is a positive number
+
+On submit: creates a subscription object with id, name, price, frequency, category, status ("active"), startDate, renewalDate (calculated from frequency), icon (use icons.wallet), billing (same as frequency), and a color based on category
+
+Uses KeyboardAvoidingView for iOS
+
+Resets form and closes modal after successful creation
+
+Then hook it up to the home screen:
+
+The "+" icon (icons.add) in the home header should open this modal when tapped (wrap in a Pressable)
+
+When a subscription is created, add it to the beginning of the subscriptions list on the home screen
+
+The new subscription should immediately appear in both the "All Subscriptions" FlatList and the home screen state
+
+Use clsx for conditional class toggling (already installed). Use dayjs for date calculations (already installed). Match the visual style of the existing auth screens. Do NOT install any new packages. -->
+
+{/_ <TouchableOpacity
+onPress={onSignInPress}
+disabled={loading}
+className={`w-full rounded-xl py-4 items-center justify-center mt-8 flex-row ${
+            loading ? 'bg-blue-400' : 'bg-blue-600'
+          }`} >
+{loading && (
+<ActivityIndicator color='#fff' size='small' className='mr-2' />
+)}
+<Text className='text-white text-base font-semibold'>
+{loading ? 'Signing in...' : 'Sign In'}
+</Text>
+</TouchableOpacity> _/}

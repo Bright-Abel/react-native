@@ -1,13 +1,13 @@
+import History from '@/components/insight-comp/History';
 import SafeAreaViewLayout from '@/components/SafeAreaViewLayout';
+import Header from '@/components/subsription-component/Header';
 import React from 'react';
-import { Text } from 'react-native';
 
 const Insights = () => {
   return (
     <SafeAreaViewLayout>
-      <Text className='text-xl font-bold text-blue-500'>
-        Welcome to Nativewind!
-      </Text>
+      <Header title='Monthly Insights' />
+      <History />
     </SafeAreaViewLayout>
   );
 };

@@ -1,13 +1,13 @@
 import SafeAreaViewLayout from '@/components/SafeAreaViewLayout';
+import Cards from '@/components/subsription-component/Cards';
+import Header from '@/components/subsription-component/Header';
 import React from 'react';
-import { Text } from 'react-native';
 
 const Subscriptions = () => {
   return (
     <SafeAreaViewLayout>
-      <Text className='text-xl font-bold text-blue-500'>
-        Welcome to Nativewind!
-      </Text>
+      <Header title='  my subscriptions' />
+      <Cards />
     </SafeAreaViewLayout>
   );
 };
